@@ -1,7 +1,20 @@
+<script>
+
+import Article from '../components/Article.vue'
+
+export default {
+  components: {
+    Article
+  }
+}
+
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>
+    <Article/>
+  </main>
+
 </template>
 
 <style>
