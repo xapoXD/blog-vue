@@ -9,14 +9,13 @@ import Header from "@/components/Head.vue"
   <Header>
   </Header>
 
-  <div class="cs-header">
-    <HelloWorld msg="LINKS HERE" />
-
+  <div style="float:right">
       <RouterLink class="container"  to="/">Home</RouterLink>
+  </div>
 
       <RouterLink class="container2"  to="/about">About</RouterLink>
 
-  </div>
+
 
   <RouterView />
 </template>
@@ -29,16 +28,20 @@ import Header from "@/components/Head.vue"
   height: 10vh;
 }
 
+
 .container {
   font-family: arial;
   font-size: 24px;
-  text-align: left;
+text-align: center;
+
 }
 
 .container2 {
   font-family: arial;
   font-size: 24px;
   text-align: right;
+
+  float:left  ;
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="a-wrapper">
-    <h3 >Funguje to uplne skvele</h3>
+    <h3 class="center" >Funguje to uplne skvele</h3>
 
       <span>
   The Git feature that really makes it stand apart from nearly every other SCM out there is its branching model.
