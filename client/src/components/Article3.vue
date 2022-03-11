@@ -1,9 +1,7 @@
 <template>
   <div class="a-wrapper">
-    <h3>Title</h3>
-      <span>
-        <img scr="https://picsum.photos/50/50">
-      </span>
+    <h3 >Funguje to uplne skvele</h3>
+
       <span>
   The Git feature that really makes it stand apart from nearly every other SCM out there is its branching model.
 
@@ -16,5 +14,21 @@
   Feature Based Workflow. Create new branches for each new feature you're working on so you can seamlessly switch back and forth between them, then delete each branch when that feature gets merged into your main line.
   Disposable Experimentation. Create a branch to experiment in, realize it's not going to work, and just delete it - abandoning the work—with nobody else ever seeing it (even if you've pushed other branches in the meantime).
 </span>
+    <span class="center">
+
+       <img src="https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts" alt="kamo nevim proc se nezovratuje vollllll" width="600" height="500"/>
+
+      </span>
     </div>
 </template>
+
+<style>
+
+.center {
+  font-family: arial;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+</style>

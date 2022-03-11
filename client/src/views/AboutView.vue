@@ -1,6 +1,6 @@
 <script>
 
-import Article from '../components/Article.vue'
+import Article from '../components/Article3.vue'
 
 export default {
   components: {
