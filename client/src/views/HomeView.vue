@@ -10,6 +10,7 @@ export default {
     return {
       articles: [
         {
+          id:1,
           image: Picture,
           title: "Post 1",
           date: new Date(),
@@ -19,6 +20,7 @@ Pellentesque arcu. Phasellus rhoncus.
 `
         },
         {
+          id:2,
           image: 'https://picsum.photos/id/1036/4608/3072',
           title: "Post 2",
           date: new Date(),
@@ -28,7 +30,7 @@ Pellentesque arcu. Phasellus rhoncus.
 `
         },
         {
-
+          id:3,
           image: 'https://picsum.photos/id/1040/4496/3000/',
           title: "Post 3",
           date: new Date(),
@@ -46,7 +48,7 @@ Pellentesque arcu. Phasellus rhoncus.
 <template>
   <div class="row">
     <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2  pb-3 pt-3" v-for="article in articles">
-      <Preview :title="article.title" :date="article.date" :text="article.text" :image="article.image"></Preview>
+      <Preview :id="article.id" :title="article.title" :date="article.date" :text="article.text" :image="article.image"></Preview>
     </div>
   </div>
 </template>

@@ -10,7 +10,7 @@
           <h6 class="card-subtitle">{{ formattedDate }}</h6>
           <p class="card-text text-truncate">{{text}}</p>
 
-          <RouterLink to="/SpongeArticle" class="btn btn-primary">
+          <RouterLink :to="`/SpongeArticle/${id}`" class="btn btn-primary">
             Číst dáleeeeeeeeee
             <em class="bi-play"/>
           </RouterLink>
@@ -25,6 +25,7 @@
 export default {
   name: "Preview",
   props: {
+    id: Number,
     title: String,
     date: Date,
     text: String,

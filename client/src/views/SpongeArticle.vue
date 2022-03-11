@@ -1,7 +1,8 @@
 <template>
   <div class="row">
     <div class="col-md-6 offset-md-3 p-5 bg-light">
-      <h3>{{ article.title }}</h3>
+      <h3>{{ article.title }} #{{article.id}}</h3>
+
       <h6>{{ formattedDate }}</h6>
       <p v-html="article.text"></p>
       <RouterLink to="/">Home</RouterLink>
@@ -15,6 +16,7 @@ export default {
   data() {
     return {
       article: {
+        id: null,
         title: null,
         date: null,
         text: null,
@@ -28,11 +30,16 @@ export default {
     }
   },
   async mounted() {
-    this.article = await this.getData();
+
+
+    const id = this.$route.params.id;
+    this.article = await this.getData(id);
   },
   methods: {
-    async getData() {
+    async getData(id) {
+      console.debug(id);
       return {
+        id: id,
         image: 'https://picsum.photos/seed/picsum/360/240',
         title: 'Funguje to uplne skvele',
         date: new Date(),
