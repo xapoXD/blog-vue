@@ -16,41 +16,34 @@ import Header from "@/components/Head.vue"
 
 
       <nav class="navbar navbar-light bg-light" >
-        <form class="container-fluid justify-content-start">
+        <form class="container-fluid justify-content-start" >
 
 
         <div class="col col-lg-2">
-
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <RouterLink  class="nav-link" to="/about">About</RouterLink>
             </li>
           </ul>
-
         </div>
+
         <div class="col-md-auto">
           Variable width content
         </div>
-        <div class="col col-lg-2">
 
+        <div class="col col-lg-2">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <RouterLink  class="nav-link" to="/">Home</RouterLink>
             </li>
           </ul>
-
         </div>
-      </div>
 
         </form>
       </nav>
 
-      <RouterView/>
-
       </div>
     </div>
-
-
 
 
 </template>
