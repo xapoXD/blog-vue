@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
 import Header from "@/components/Head.vue"
+import Footer from "@/components/Footer.vue"
 
 </script>
 
@@ -28,7 +29,7 @@ import Header from "@/components/Head.vue"
         </div>
 
         <div class="col-md-auto">
-          Variable width content
+          Variable width content HEJJJJ
         </div>
 
         <div class="col col-lg-2">
@@ -46,6 +47,10 @@ import Header from "@/components/Head.vue"
     </div>
 
 
+<Footer>
+</Footer>
+
+
 </template>
 
 <style>
@@ -61,7 +66,7 @@ import Header from "@/components/Head.vue"
 .container {
   font-family: arial;
   font-size: 24px;
-text-align: center;
+  text-align: center;
 
 }
 
