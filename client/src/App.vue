@@ -16,8 +16,8 @@ import Footer from "@/components/Footer.vue"
       <div class="row justify-content-md-center">
 
 
-      <nav class="navbar navbar-light bg-light" >
-        <form class="container-fluid justify-content-start" >
+      <nav class="navbar navbar-light" >
+
 
 
         <div class="col col-lg-2">
@@ -29,7 +29,7 @@ import Footer from "@/components/Footer.vue"
         </div>
 
         <div class="col-md-auto">
-          Variable width content HEJJJJ
+          W E L C O M E
         </div>
 
         <div class="col col-lg-2">
@@ -40,7 +40,7 @@ import Footer from "@/components/Footer.vue"
           </ul>
         </div>
 
-        </form>
+
       </nav>
 
       </div>
