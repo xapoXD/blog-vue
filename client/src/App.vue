@@ -11,25 +11,26 @@ import Footer from "@/components/Footer.vue"
   </Header>
 
 
-
     <div class="container">
       <div class="row justify-content-md-center">
 
 
       <nav class="navbar navbar-light" >
 
-
-
         <div class="col col-lg-2">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink  class="nav-link" to="/about">About</RouterLink>
+              <Router-Link  class="nav-link" to="/about">About</Router-Link>
             </li>
           </ul>
         </div>
 
-        <div class="col-md-auto">
-          W E L C O M E
+        <div class="col col-lg-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <RouterLink  class="nav-link" to="/new-article">NEW ARTICLE</RouterLink>
+            </li>
+          </ul>
         </div>
 
         <div class="col col-lg-2">
@@ -44,8 +45,11 @@ import Footer from "@/components/Footer.vue"
       </nav>
 
       </div>
+
+
     </div>
 
+  <RouterView/>
 
 <Footer>
 </Footer>

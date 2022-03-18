@@ -1,56 +1,29 @@
 <template>
-  <footer class="cs-footer">
-
-
-
-
-
-
-    <form>
+  <header class="cs-header">
+    <div class="container">
       <div class="row">
-        <div class="col-md-4 mb-3">
-          <label for="validationDefault01">First name</label>
-          <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationDefault02">Last name</label>
-          <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+        <div class="col text-center text-white">
+          <h1 class="pt-5">THE END</h1>
+          <span class="subheading">dont forget to like, comment, share, buy my merch and deliver me free food</span>
         </div>
       </div>
-
-        <div class="col-md-4 mb-3">
-          <label for="exampleInputEmail">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
-          <small id="emailHelp1" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-          <label class="form-check-label" for="invalidCheck2">
-            Agree to terms and conditions
-          </label>
-        </div>
-      </div>
-
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
-
-
-
-  </footer>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Header"
 }
 </script>
 
 <style scoped>
 
-.cs-footer {
+.cs-header {
 
-  height: 40vh;
+  background-image: url('https://picsum.photos/id/1033/2048/1365?blur=1');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 150vh;
 }
 </style>

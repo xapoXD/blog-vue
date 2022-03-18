@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center text-white">
-          <h1 class="pt-5">BRASKO KAMO MUJ bLoGgggg</h1>
+          <h1 class="pt-5">WELCOME to my BLOG bruhh</h1>
           <span class="subheading">HAhhhhh enjoy...</span>
         </div>
       </div>
