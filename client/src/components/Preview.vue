@@ -27,13 +27,13 @@ export default {
   props: {
     id: Number,
     title: String,
-    date: Date,
+    date: String,
     text: String,
     image: String
   },
   computed: {
     formattedDate() {
-      return this.date.toLocaleDateString()
+      return new Date(this.date).toLocaleDateString()
     }
   }
 }

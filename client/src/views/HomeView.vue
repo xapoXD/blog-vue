@@ -8,41 +8,19 @@ export default {
   components: {Article3, Preview, Article},
   data() {
     return {
-      articles: [
-        {
-          id:1,
-          image: Picture,
-          title: "Post 1",
-          date: new Date(),
-          text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas wisi a erat.
-Integer tempor. Pellentesque ipsum. Integer malesuada. Vestibulum fermentum tortor id mi. Aenean placerat.
-Pellentesque arcu. Phasellus rhoncus.
-`
-        },
-        {
-          id:2,
-          image: 'https://picsum.photos/id/1036/4608/3072',
-          title: "Post 2",
-          date: new Date(),
-          text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas wisi a erat.
-Integer tempor. Pellentesque ipsum. Integer malesuada. Vestibulum fermentum tortor id mi. Aenean placerat.
-Pellentesque arcu. Phasellus rhoncus.
-`
-        },
-        {
-          id:3,
-          image: 'https://picsum.photos/id/1040/4496/3000/',
-          title: "Post 3",
-          date: new Date(),
-          text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas wisi a erat.
-Integer tempor. Pellentesque ipsum. Integer malesuada. Vestibulum fermentum tortor id mi. Aenean placerat.
-Pellentesque arcu. Phasellus rhoncus.
-`
-        },
-      ]
+      articles: []
     }
+  },
+  async created() {
+    const res = await fetch('https://localhost:3000/articles',
+        {
+          method: 'GET',
+        });
+    console.log(res);
+    this.articles = await res.json();
   }
 }
+
 </script>
 
 <template>
